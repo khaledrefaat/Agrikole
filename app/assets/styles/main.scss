@@ -1,12 +1,17 @@
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 @import "./base/base";
+@import "./base/typography";
+@import "./base/utilites";
 
-@import "./layout/about-section";
 @import "./layout/nav";
-@import "./layout/blog-section";
-@import "./layout/footer";
 @import "./layout/header";
-@import "./layout/products-section";
-@import "./layout/projects-section";
-@import "./layout/services-section";
+@import "./layout/footer";
+
+// @import "./component/btn";
+@import "./component/about-section";
+@import "./component/blog-section";
+@import "./component/products-section";
+@import "./component/projects-section";
+@import "./component/services-section";

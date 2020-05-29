@@ -1,0 +1,36 @@
+// media querys manager
+
+/* 
+
+break point choices
+
+    largest = 1200px
+    large = 1050px
+    medium = 900px
+    small = 600px
+
+    1em = 16px;
+*/
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == largest {
+		@media only screen and(min-width: 75em) {
+			@content;
+		}
+	}
+	@if $breakpoint == large {
+		@media only screen and(min-width: 56.25em) {
+			@content;
+		}
+	}
+	@if $breakpoint == medium {
+		@media only screen and(min-width: 46.875em) {
+			@content;
+		}
+	}
+	@if $breakpoint == small {
+		@media only screen and(min-width: 37.5em) {
+			@content;
+		}
+	}
+}
