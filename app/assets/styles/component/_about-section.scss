@@ -1,0 +1,113 @@
+.about-section {
+	// grid-column: center-start/ center-end;
+	// display: flex;
+
+	&__picture {
+		// grid-column: center-start/ center-end;
+		position: relative;
+		grid-column: full-start/ full-end;
+
+		// @include respond (medium) {
+		// 	grid-column: col-start/ col-end 5;
+		// 	padding-right: 4rem;
+		// }
+
+		// @include respond(small) {
+		// 	grid-column: center-start/ center-end;
+		// }
+
+		@include respond (medium) {
+			grid-column: full-start / col-end 5;
+			padding-right: 2rem;
+		}
+
+		@include respond (large) {
+			grid-column: col-start/ col-end 5;
+			padding-right: 4rem;
+		}
+
+		@include respond (largest) {
+			grid-column: col-start/ col-end 3;
+			padding-right: 0;
+		}
+	}
+
+	&__picture img {
+		border-radius: .5rem;
+	}
+
+	&__picture--vertical-img {
+		height: 100%;
+		width: 100%;
+
+		@include respond (medium) {
+			width: 90%;
+		}
+
+		@include respond (largest) {
+			width: 110%;
+		}
+	}
+
+	&__picture--horizontal-img {
+		max-width: 100%;
+		height: 30rem;
+		position: absolute;
+		right: 50%;
+		bottom: -12%;
+		transform: translateX(50%);
+		@include respond (medium) {
+			max-width: 70%;
+			height: 25rem;
+			position: absolute;
+			right: 40%;
+			bottom: 0;
+		}
+
+		// @include respond (large) {
+		// 	right: 25%;
+		// }
+
+		@include respond (largest) {
+			right: 10%;
+		}
+	}
+
+	&__content {
+		grid-column: full-start/ full-end;
+		padding: 1rem;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+		// flex-direction: column;
+
+		// @include respond(small) {
+		// 	grid-column: center-start/ center-end;
+		// }
+
+		@include respond (medium) {
+			grid-column: col-end 5/ col-end -1;
+			padding-left: 2rem;
+			// padding-right: 2rem;
+		}
+
+		@include respond (large) {
+			grid-column: col-end 5/ col-end -1;
+			padding-left: 4rem;
+		}
+
+		@include respond (largest) {
+			grid-column: col-end 4/ col-end -1;
+			padding-left: 3rem;
+		}
+	}
+
+	&__content div {
+		display: flex;
+		align-items: center;
+	}
+
+	&__content div img {
+		max-width: 7rem;
+	}
+}

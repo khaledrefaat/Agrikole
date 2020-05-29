@@ -1,0 +1,33 @@
+.heading-1 {
+	font-size: 14rem;
+	color: $color-white;
+}
+
+.heading-2 {
+	font-size: 4rem;
+	color: $font-color;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	max-width: 50rem;
+	line-height: 1.2;
+}
+
+.heading-3 {
+	font-size: 1.4rem;
+	letter-spacing: 3px;
+	line-height: 1.8;
+	font-weight: 700;
+	color: $font-color;
+	text-transform: uppercase;
+
+	&--green {
+		color: $primary-color;
+	}
+}
+
+.paragraph {
+	font-size: 1.6rem;
+	line-height: 2;
+	color: $color-grey-dark-2;
+}
