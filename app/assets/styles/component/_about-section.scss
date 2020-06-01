@@ -1,34 +1,19 @@
 .about-section {
-	// grid-column: center-start/ center-end;
-	// display: flex;
-
 	&__picture {
-		// grid-column: center-start/ center-end;
 		position: relative;
 		grid-column: full-start/ full-end;
 
-		// @include respond (medium) {
-		// 	grid-column: col-start/ col-end 5;
-		// 	padding-right: 4rem;
-		// }
-
-		// @include respond(small) {
-		// 	grid-column: center-start/ center-end;
-		// }
-
 		@include respond (medium) {
-			grid-column: full-start / col-end 5;
-			padding-right: 2rem;
+			grid-column: full-start / col-end 6;
+			@include wrapper;
 		}
 
 		@include respond (large) {
-			grid-column: col-start/ col-end 5;
-			padding-right: 4rem;
+			grid-column: col-start/ col-end 6;
 		}
 
 		@include respond (largest) {
-			grid-column: col-start/ col-end 3;
-			padding-right: 0;
+			grid-column: col-start/ col-end 5;
 		}
 	}
 
@@ -37,15 +22,17 @@
 	}
 
 	&__picture--vertical-img {
-		height: 100%;
+		height: auto;
 		width: 100%;
 
 		@include respond (medium) {
 			width: 90%;
+			height: 100%;
 		}
 
-		@include respond (largest) {
-			width: 110%;
+		@include respond (large) {
+			height: 90%;
+			width: 90%;
 		}
 	}
 
@@ -54,8 +41,9 @@
 		height: 30rem;
 		position: absolute;
 		right: 50%;
-		bottom: -12%;
+		bottom: -8%;
 		transform: translateX(50%);
+
 		@include respond (medium) {
 			max-width: 70%;
 			height: 25rem;
@@ -64,41 +52,25 @@
 			bottom: 0;
 		}
 
-		// @include respond (large) {
-		// 	right: 25%;
-		// }
-
-		@include respond (largest) {
-			right: 10%;
+		@include respond (large) {
+			right: 35%;
 		}
 	}
 
 	&__content {
 		grid-column: full-start/ full-end;
 		padding: 1rem;
-		// display: flex;
-		// align-items: center;
-		// justify-content: center;
-		// flex-direction: column;
-
-		// @include respond(small) {
-		// 	grid-column: center-start/ center-end;
-		// }
-
 		@include respond (medium) {
-			grid-column: col-end 5/ col-end -1;
-			padding-left: 2rem;
-			// padding-right: 2rem;
+			grid-column: col-end 6/ col-end -1;
+			@include wrapper;
 		}
 
 		@include respond (large) {
-			grid-column: col-end 5/ col-end -1;
-			padding-left: 4rem;
+			grid-column: col-end 6/ col-end -1;
 		}
 
 		@include respond (largest) {
-			grid-column: col-end 4/ col-end -1;
-			padding-left: 3rem;
+			grid-column: col-end 5/ col-end -1;
 		}
 	}
 

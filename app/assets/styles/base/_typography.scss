@@ -18,11 +18,11 @@
 	letter-spacing: 3px;
 	line-height: 1.8;
 	font-weight: 700;
-	color: $font-color;
+	color: $primary-color;
 	text-transform: uppercase;
 
-	&--green {
-		color: $primary-color;
+	&--grey {
+		color: $font-color;
 	}
 }
 

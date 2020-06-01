@@ -32,12 +32,9 @@ body {
 .container {
 	display: grid;
 	grid-template-rows: min-content 90vh repeat(7, min-content);
-	grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start]
-		repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+	grid-template-columns: [full-start]repeat(10, [col-start] minmax(min-content, 15rem) [col-end])[full-end];
 
 	@include respond(medium) {
 		grid-template-rows: min-content 90vh repeat(6, min-content);
-		grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start]
-			repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
 	}
 }

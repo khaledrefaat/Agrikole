@@ -34,3 +34,26 @@ break point choices
 		}
 	}
 }
+
+@mixin wrapper() {
+	padding: 6rem;
+
+	@include respond(medium) {
+		padding: 3rem;
+	}
+
+	@include respond(large) {
+		padding: 4rem;
+	}
+
+	@include respond(largest) {
+		padding: 6rem;
+	}
+}
+
+@mixin center() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
